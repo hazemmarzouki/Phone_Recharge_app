@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/black_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Bienvenue"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/login_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingLeft="20dp"
+                    android:text="TextView"
+                    android:textColor="#6E6C6C"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="128dp"
+                android:layout_height="125dp"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_baseline_person_pin_24" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="Entrer Votre Numéro De Télephone :"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/txt_phone"
+                    android:layout_width="226dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/black_round_corner"
+                    android:fontFamily="@font/poppins_regular"
+                    android:inputType="textPersonName"
+                    android:maxLength="8"
+                    android:paddingLeft="17dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_infoligne"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:foregroundGravity="center"
+                android:paddingTop="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:text="Entrer Votre Code De Recharge :"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txt_code"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/black_round_corner"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="number|phone"
+            android:maxLength="14"
+            android:paddingLeft="17dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:text="Recharger Votre Ligne "
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/txt_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/black_round_corner"
+            android:editable="false"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textPersonName"
+            android:paddingLeft="17dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/black_fill_rounded_color"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Recharger"
+            android:textColor="@android:color/white"
+            android:textColorLink="#424242" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="right"
+                android:text="Pour Consulter le Solde De Votre Ligne :"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txt_consult"
+                    android:layout_width="116dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/black_round_corner"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_consult"
+                    android:layout_width="161dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/black_fill_rounded_color"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Consulter"
+                    android:textColor="@color/cardview_light_background" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
